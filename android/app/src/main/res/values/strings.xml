@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Prognóstico IA</string>
+    <string name="title_activity_main">Prognóstico IA</string>
+    <string name="package_name">com.aipredictor.app</string>
+    <string name="custom_url_scheme">com.aipredictor.app</string>
+</resources>

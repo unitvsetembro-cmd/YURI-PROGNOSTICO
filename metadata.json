@@ -1,0 +1,5 @@
+{
+  "name": "YURI PROGNOSTICO",
+  "description": "Aplicativo de prognósticos de futebol com análise baseada em IA e pesquisa em tempo real, agora pronto para Android.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"]
+}

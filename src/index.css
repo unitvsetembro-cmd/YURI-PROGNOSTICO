@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  --color-bg: #E4E3E0;
+  --color-ink: #141414;
+  --color-line: #141414;
+  --color-accent: #F27D26;
+}
+
+:root {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+}
+
+.data-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-line);
+  transition: background 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.data-row:hover {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.col-header {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 11px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.data-value {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.markdown-body h1 { @apply text-2xl font-bold mb-4; }
+.markdown-body h2 { @apply text-xl font-bold mb-3 mt-6; }
+.markdown-body h3 { @apply text-lg font-bold mb-2 mt-4; }
+.markdown-body p { @apply mb-4 leading-relaxed; }
+.markdown-body ul { @apply list-disc pl-5 mb-4; }
+.markdown-body li { @apply mb-1; }
+.markdown-body strong { @apply font-bold text-accent; }
